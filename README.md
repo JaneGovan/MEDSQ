@@ -1,8 +1,15 @@
 # Where can students find guidance? Towards Adaptive Medical Education via MEDSQ
-## 1.Dataset
+## Dataset
+### Sources
 
-## 2.Inference
+### Statistics
 
-## 3.Finetune
+### Cases
 
-## 4.Comparsion
+### Details
+
+## Inference
+
+## Continuous Fine-tuning
+
+## Comparsion
