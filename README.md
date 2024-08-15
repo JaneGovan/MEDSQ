@@ -1,7 +1,7 @@
 # MEDSQ: A framework for promoting the reliability of LLMs as assistants in medical education
 
 ## Dataset Sources
-**Our datasets is constructed from two uni-modal resources: [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.0.0/) and [Chest ImaGenome](https://physionet.org/content/chest-imagenome/1.0.0/).**
+**Our [EduDiag](https://github.com/JaneGovan/MEDSQ/blob/main/data/EduDiag.json) and [ScqTest](https://github.com/JaneGovan/MEDSQ/blob/main/data/ScqTest.json) datasets is constructed from two uni-modal resources: [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.0.0/) and [Chest ImaGenome](https://physionet.org/content/chest-imagenome/1.0.0/).**
 
 ![source](https://github.com/JaneGovan/MEDSQ/blob/main/images/source.png)
 
@@ -12,12 +12,17 @@
 ![abnormal_zones](https://github.com/JaneGovan/MEDSQ/blob/main/images/abnormal_zones.png)
 
 ### Reponses
-**The average number of words per round of responses in each template.**
+**The average number of words per response in each round for every template in the bilingual dataset EduDiag.**
 
 ![length_tokens](https://github.com/JaneGovan/MEDSQ/blob/main/images/length_tokens.png)
 
+### Option
+**The distribution of options for single-choice questions in the bilingual dataset ScqTest.**
+
+![percent_options](https://github.com/JaneGovan/MEDSQ/blob/main/images/percent_options.png)
+
 ## Dataset Cases
-### [EduDiag](https://github.com/JaneGovan/MEDSQ/blob/main/data/EduDiag.json)
+### EduDiag
 #### English
 
 ![EduDiag_case_en](https://github.com/JaneGovan/MEDSQ/blob/main/images/EduDiag_case_en.png)
@@ -26,7 +31,7 @@
 
 ![EduDiag_case_zh](https://github.com/JaneGovan/MEDSQ/blob/main/images/EduDiag_case_zh.png)
 
-### [ScqTest](https://github.com/JaneGovan/MEDSQ/blob/main/data/ScqTest.json)
+### ScqTest
 #### English
 
 ![ScqTest_case_en](https://github.com/JaneGovan/MEDSQ/blob/main/images/ScqTest_case_en.png)
@@ -113,7 +118,7 @@
 ```python
 pip install -r requirements.txt
 ```
-**fine-tune using our dataset:**
+**Fine-tune using our dataset:**
 ```python
 cd MEDSQ
 bash models/scripts/finetune_lora.sh
@@ -134,3 +139,11 @@ print(response)
 ```
 
 ## Comparsion
+**Assessment of medical students' satisfaction with individual model responses.**
+
+![human_score_detection](https://github.com/JaneGovan/MEDSQ/blob/main/images/human_score_detection.png)
+
+**Evaluation of the relevance of generated text answers to the Ground Truth.**
+
+![human_score_answer](https://github.com/JaneGovan/MEDSQ/blob/main/images/human_score_answer.png)
+
