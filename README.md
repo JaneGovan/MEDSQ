@@ -16,7 +16,7 @@
 
 ![length_tokens](https://github.com/JaneGovan/MEDSQ/blob/main/images/length_tokens.png)
 
-### Option
+### Options
 **The distribution of options for single-choice questions in the bilingual dataset ScqTest.**
 
 ![percent_options](https://github.com/JaneGovan/MEDSQ/blob/main/images/percent_options.png)
