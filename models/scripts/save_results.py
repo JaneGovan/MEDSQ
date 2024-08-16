@@ -11,9 +11,9 @@ sys.path.append(sibling_directory)
 from utils.convert_data import sentence2a_d, read_json, write2json
 
 
-def predict(output_path, inputs: List[Dict], basemodel_path, max_new_tokens=512) -> List[Dict]:
+def predict(output_path, inputs: List[Dict], model_path, max_new_tokens=512) -> List[Dict]:
     torch.manual_seed(42)
-    path = basemodel_path
+    path = model_path
     tokenizer = AutoTokenizer.from_pretrained(path)
     model = AutoModelForCausalLM.from_pretrained(path, torch_dtype=torch.bfloat16, device_map='cuda', trust_remote_code=True)
     try:
@@ -48,11 +48,8 @@ if __name__ == '__main__':
     file_base_name = os.path.splitext(file_name)[0]
     if not os.path.exists('./result'):
         os.makedirs('./result')
-    before_path = os.path.join('./result', file_base_name + '-result-before-train.json')
-    after_path = os.path.join('./result', file_base_name + '-result-after-train.json')
-    base_model_path = 'MiniCPM-2B-sft-bf16'
+    path_after_train = os.path.join('./result', file_base_name + '-result-after-train.json')
     trained_model_path = 'MEDSQ'
     
-    predict(before_path, read_json(test_data_path), base_model_path, max_new_tokens)
-    predict(after_path, read_json(test_data_path), trained_model_path, max_new_tokens)
+    predict(path_after_train, read_json(test_data_path), trained_model_path, max_new_tokens)
         
