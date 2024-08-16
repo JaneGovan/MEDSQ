@@ -1,7 +1,7 @@
 # MEDSQ: A framework for promoting the reliability of LLMs as assistants in medical education
 
 ## Dataset Sources
-**Our [EduDiag](https://github.com/JaneGovan/MEDSQ/blob/main/data/EduDiag.json) and [ScqTest](https://github.com/JaneGovan/MEDSQ/blob/main/data/ScqTest.json) datasets is constructed from two uni-modal resources: [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.0.0/) and [Chest ImaGenome](https://physionet.org/content/chest-imagenome/1.0.0/).**
+**Our [EduDiag](https://github.com/JaneGovan/MEDSQ/blob/main/data/EduDiag.json) and [ScqTest](https://github.com/JaneGovan/MEDSQ/blob/main/data/ScqTest.json) datasets is constructed from two resources: [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.0.0/) and [Chest ImaGenome](https://physionet.org/content/chest-imagenome/1.0.0/).**
 
 ![source](https://github.com/JaneGovan/MEDSQ/blob/main/images/source.png)
 
