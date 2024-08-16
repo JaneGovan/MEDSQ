@@ -41,7 +41,7 @@
 ![ScqTest_case_zh](https://github.com/JaneGovan/MEDSQ/blob/main/images/ScqTest_case_zh.png)
 
 ## Dataset Details
-**Each data in EduDiag contains `image`, `report_en`, `qa_en`, `report_zh`, `qa_zh`. `image` records the information contained in the patient's chest X-ray, `image_path` indicates the path of the image, `reason_for_exam` contains the patient's medical history and the purpose of the examination, `bbox` lists all anatomical locations with abnormalities and uses `focuses` to indicate specific abnormalities, and the remaining fields are directly derived from MIMIC-CXR. `report_en` and `report_zh` are cleaned English and Chinese medical reports respectively. `qa_en` and `qa_zh` contain multi-round `question` and `answer` of bilingual templates.**
+**Each data in EduDiag contains `image`, `report_en`, `qa_en`, `report_zh`, `qa_zh`. `image` records the information contained in the patient's chest X-ray, `image_path` indicates the path of the image, `reason_for_exam` contains the patient's medical history and the purpose of the examination, `bbox` lists all anatomical locations with abnormalities and uses `focuses` to indicate specific abnormalities, and the remaining fields are directly derived from Chest ImaGenome. `report_en` and `report_zh` are cleaned English and Chinese medical reports respectively. `qa_en` and `qa_zh` contain multi-round `question` and `answer` of bilingual templates.**
 ```python
 {
   "image": {
