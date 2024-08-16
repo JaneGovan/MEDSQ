@@ -1,12 +1,10 @@
 export CUDA_LAUNCH_BLOCKING=1
 
-MODE=MiniCPM-2B-sft-bf16
 OUTPUT_PATH=./adapter_model
 TRAIN_DATA=data/train_data.json
 EVAL_DATA=data/eval_data.json
 
 deepspeed --include localhost:0 models/scripts/finetune.py \
-    --model_name_or_path $MODE \
     --output_dir $OUTPUT_PATH \
     --train_data_path $TRAIN_DATA \
     --eval_data_path $EVAL_DATA \
