@@ -25,7 +25,7 @@ def predict(output_path, inputs: List[Dict], model_path, max_new_tokens=512) -> 
         query = one['messages'][0]['content']
         gt = one['messages'][1]['content']
         start = time.time()
-        response, history = model.chat(tokenizer, query, history=None, eos_token_id=2, pad_token_id=2, temperature=0.3, top_p=0.8, max_length=None, max_new_tokens=max_new_tokens)
+        response = model.chat(tokenizer, query, history=None, eos_token_id=2, pad_token_id=2, temperature=0.3, top_p=0.8, max_length=None, max_new_tokens=max_new_tokens)[0]
         end = time.time()
         if 'cls' in output_path:
             response = sentence2a_d(response)
