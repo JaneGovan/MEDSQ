@@ -56,7 +56,7 @@ def parse_args():
     parser.add_argument('--output_path', type=str, default='MEDSQ', help='最终保存合并，量化后的模型目录')
     parser.add_argument('--qbits', type=int, default=None, help='模型量化位数')
     parser.add_argument('--device', type=str, default='auto', help='device_map')
-    parser.add_argument('--remote_scripts_dir', type=str, default='MiniCPM-2B-sft-bf16', help='官方脚本目录')
+    parser.add_argument('--remote_scripts_dir', type=str, default='openbmb/MiniCPM-2B-sft-bf16', help='官方脚本目录')
     return parser.parse_args()
 
 
