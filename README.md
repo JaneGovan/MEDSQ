@@ -141,7 +141,7 @@ print(response)
 ## Comparsion
 **Assessment of medical students' satisfaction with individual model responses.**
 
-![human_score_detection](https://github.com/JaneGovan/MEDSQ/blob/main/images/human_score_detection.png)
+![human_score_detection](https://github.com/JaneGovan/MEDSQ/blob/main/images/human_score_update.png)
 
 **Evaluation of the relevance of generated text answers to the Ground Truth.**
 
