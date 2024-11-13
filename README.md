@@ -139,6 +139,10 @@ print(response)
 ```
 
 ## Comparsion
+**Ablation study of filtering operations in abnormal area localization scenario.**
+
+![human_score_detection](https://github.com/JaneGovan/MEDSQ/blob/main/images/ablation_loc.png)
+
 **Assessment of medical students' satisfaction with individual model responses.**
 
 ![human_score_detection](https://github.com/JaneGovan/MEDSQ/blob/main/images/human_score_update.png)
