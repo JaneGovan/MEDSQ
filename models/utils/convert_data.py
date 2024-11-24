@@ -170,13 +170,3 @@ def to_trained_data(list_data,filepath):
     
     write2json(filepath, data)
     return data
-
-
-# if __name__ == "__main__":
-#     train_dataset, eval_dataset, test_dataset = divide_data('data/EduDiag.json')
-#     write2json('data/train_dataset.json', train_dataset)
-#     write2json('data/eval_dataset.json', eval_dataset)
-#     write2json('data/test_dataset.json', test_dataset)
-#     list_data = read_json('data/train_dataset.json')
-#     data = convert_for_gen(list_data, 'en')
-#     to_trained_data(data, 'data/train_data.json')
