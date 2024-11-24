@@ -114,24 +114,23 @@
 ```
 
 **Access**
+
 Our datasets are available in the [data]() directory. Both dataset EduDiag and dataset ScqTest are stored in json format. The loading and conversion methods are as follows:
 ```python
-{
-  from models.utils.convert_data import seed, read_json, write2json, convert_for_gen
+from models.utils.convert_data import seed, read_json, write2json, convert_for_gen
 
-  # Set random seed
-  seed(42)
+# Set random seed
+seed(42)
 
-  # Load data
-  data = read_json('data/EduDiag.json')
+# Load data
+data = read_json('data/EduDiag.json')
 
-  # Convert the original data into training format
-  train_dataset, _, _ = divide_data('data/EduDiag.json')
-  write2json('data/train_dataset.json', train_dataset)
-  list_data = read_json('data/train_dataset.json')
-  data = convert_for_gen(list_data, 'en')
-  to_trained_data(data, 'data/train_data.json')
-}
+# Convert the original data into training format
+train_dataset, _, _ = divide_data('data/EduDiag.json')
+write2json('data/train_dataset.json', train_dataset)
+list_data = read_json('data/train_dataset.json')
+data = convert_for_gen(list_data, 'en')
+to_trained_data(data, 'data/train_data.json')
 ```
 
 ## Fine-tuning
