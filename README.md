@@ -127,9 +127,7 @@ data = read_json('data/EduDiag.json')
 
 # Convert the original data into training format
 train_dataset, _, _ = divide_data('data/EduDiag.json')
-write2json('data/train_dataset.json', train_dataset)
-list_data = read_json('data/train_dataset.json')
-data = convert_for_gen(list_data, 'en')
+data = convert_for_gen(train_dataset, 'en')
 to_trained_data(data, 'data/train_data.json')
 ```
 
