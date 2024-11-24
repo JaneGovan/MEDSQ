@@ -78,7 +78,7 @@ def divide_data(filepath):
     eval_size = int((total_size - train_size) / 2)
     test_size = total_size - train_size - eval_size
     train_dataset, eval_dataset, test_dataset = random_split(list_data, [train_size, eval_size, test_size])
-    return train_dataset, eval_dataset, test_dataset
+    return list(train_dataset), list(eval_dataset), list(test_dataset)
 
 
 def convert_for_cls(list_data, lang="zh"):
