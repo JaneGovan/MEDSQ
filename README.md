@@ -117,7 +117,7 @@
 
 Our datasets are available in the [data]() directory. Both dataset EduDiag and dataset ScqTest are stored in json format. The loading and conversion methods are as follows:
 ```python
-from models.utils.convert_data import seed, read_json, write2json, convert_for_gen
+from models.utils.convert_data import seed, read_json, convert_for_gen
 
 # Set random seed
 seed(42)
