@@ -5,6 +5,14 @@ import numpy as np
 import re
 
 
+def seed(n:int):
+    random.seed(n)
+    np.random.seed(n)
+    torch.manual_seed(n)
+    torch.cuda.manual_seed(n)
+    torch.cuda.manual_seed_all(n)
+
+
 def idx2a_d(idx):
     if idx < 0 or idx > 3 or isinstance(idx, int) is False:
         return None
