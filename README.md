@@ -1,4 +1,4 @@
-# MEDSQ: Towards Personalized Medical Education via Multi-Modal Interaction Guidance
+# [MEDSQ: Towards Personalized Medical Education via Multi-Modal Interaction Guidance](https://www.sciencedirect.com/science/article/abs/pii/S0957417424030057)
 
 ## Dataset Sources
 **Our [EduDiag](https://github.com/JaneGovan/MEDSQ/blob/main/data/EduDiag.json) and [ScqTest](https://github.com/JaneGovan/MEDSQ/blob/main/data/ScqTest.json) datasets is constructed from two resources: [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.0.0/) and [Chest ImaGenome](https://physionet.org/content/chest-imagenome/1.0.0/).**
